@@ -9,6 +9,9 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @categories = Category.all
+    @user = User.new
+    @users = User.all
   end
 
   def create
